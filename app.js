@@ -165,11 +165,12 @@ if(contactForm) {
         btn.innerHTML = `<i class='bx bx-loader-alt bx-spin'></i> Sending...`;
         
         const formData = new FormData(contactForm);
+        const urlEncodedData = new URLSearchParams(formData);
         
         fetch(contactForm.action, {
             method: 'POST',
             mode: 'no-cors',
-            body: formData
+            body: urlEncodedData
         }).then(() => {
             btn.style.background = '#10b981'; // Green success color
             btn.innerHTML = `<i class='bx bx-check'></i> Message Sent!`;
