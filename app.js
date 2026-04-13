@@ -233,7 +233,7 @@ if (canvas) {
         ctx.fillStyle = '#0a0f1c'; 
         ctx.fillRect(0, 0, width, height);
 
-        time += 0.015;
+        time += 0.007;
 
         const offsetX = width / 2;
         const offsetY = height / 2 + 100;
@@ -247,7 +247,7 @@ if (canvas) {
                 let x = (j - cols / 2) * spacing;
                 let z = i * spacing;
                 let distance = Math.sqrt(x*x + z*z);
-                let y = Math.sin(distance * 0.005 - time * 2) * 120 + Math.cos(x * 0.01 + time) * 50;
+                let y = Math.sin(distance * 0.005 - time * 1) * 120 + Math.cos(x * 0.01 + time * 0.7) * 50;
 
                 let scale = 900 / (900 + z); 
                 let px = offsetX + x * scale;
