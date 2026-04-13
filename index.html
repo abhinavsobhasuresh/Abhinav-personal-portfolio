@@ -97,9 +97,6 @@
                             <a href="https://www.linkedin.com/in/abhinav-sobha-suresh/" target="_blank" class="btn btn-linkedin">
                                 <i class='bx bxl-linkedin-square'></i> View more on LinkedIn
                             </a>
-                            <a href="https://drive.google.com/file/d/1SGuLzySj34R775hO-LINDCMoMil-DNzy/view?usp=sharing" target="_blank" class="btn btn-outline" style="margin-top: 1.5rem; background: var(--glass-bg);">
-                                <i class='bx bx-file-blank'></i> View Resume
-                            </a>
                         </div>
                     </div>
                     <div class="about-stats reveal" data-direction="right">
@@ -239,54 +236,86 @@
                 <div class="project-list">
                     <!-- Project 1 -->
                     <div class="project-card glass reveal">
-                        <div class="project-img-placeholder">
-                            <i class='bx bx-water'></i>
+                        <div class="project-img-placeholder" style="padding: 0; overflow: hidden;">
+                            <img src="deoze-hub.webp" alt="Deyoze Home Automation Hub" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">DWC System</h3>
+                            <h3 class="project-title">Deyoze Home Automation Hub: Schematic Design</h3>
                             <p class="project-desc">
-                                Automated Deep Water Culture hydroponics system targeting efficient nutrient control. Integrating precision sensors and microcontrollers for real-time monitoring and adjustment.
+                                I developed the core hardware schematics for the Deyoze smart home hub, focusing on a robust architecture that seamlessly bridges multiple communication protocols like Zigbee, Wi-Fi, and Bluetooth. The design prioritizes low-latency data processing and efficient power management to ensure a stable, always-on foundation for modern smart home ecosystems.
                             </p>
                             <div class="project-tech">
-                                <span>PCB Design</span>
-                                <span>Embedded C</span>
-                                <span>Sensors</span>
+                                <span>Schematic Design</span>
+                                <span>Hardware Architecture</span>
+                                <span>IoT Protocols</span>
+                            </div>
+                            <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                                <a href="https://deyoze.io/" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class='bx bx-link-external'></i> Startup Website</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="project-card glass reveal" data-delay="100">
-                        <div class="project-img-placeholder">
-                            <i class='bx bx-broadcast'></i>
+                        <div class="project-img-placeholder" style="padding: 0; overflow: hidden;">
+                            <img src="stm32.jpg" alt="STM32 Board" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Custom IoT Sensor Node</h3>
+                            <h3 class="project-title">Design and Prototyping of an STM32 Control Board</h3>
                             <p class="project-desc">
-                                A highly optimized IoT node for data collection. Created a detailed multi-layer PCB design using Altium Designer to manage low power consumption and wireless data transmission.
+                                I designed a custom development board centered around an STM32F103C8T6 microcontroller, featuring a compact four-layer stackup to ensure stable signal integrity for the high-speed crystal oscillator. The project integrated a dedicated USB-C interface for power and data, along with an onboard SWD header to streamline firmware debugging and peripheral testing.
                             </p>
                             <div class="project-tech">
-                                <span>Altium Designer</span>
-                                <span>ESP32</span>
-                                <span>IoT</span>
+                                <span>PCB Design</span>
+                                <span>STM32</span>
+                                <span>Hardware Design</span>
+                            </div>
+                            <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                                <a href="https://github.com/abhinavsobhasuresh/STM-32-Bluetooth-Module" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class='bx bxl-github'></i> GitHub</a>
+                                <a href="https://www.linkedin.com/posts/abhinav-sobha-suresh_kicad-pcbdesign-hardwareengineering-activity-7428830807969959936-4kPF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa1vlIBT2rh7sGEivrOK74ibQYuDQGtMe4" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class='bx bxl-linkedin'></i> LinkedIn Post</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
                     <div class="project-card glass reveal" data-delay="200">
-                        <div class="project-img-placeholder">
-                            <i class='bx bx-home-smile'></i>
+                        <div class="project-img-placeholder" style="padding: 0; overflow: hidden; position: relative; display: block;">
+                            <img src="esp32_side1.jpg" alt="ESP32-S3 Module Render" style="width: 100%; height: 100%; object-fit: contain;">
+                            <img src="esp32_side2.jpg" alt="ESP32-S3 PCB Layout" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Smart Home Controller Hub</h3>
+                            <h3 class="project-title">Custom ESP32-S3 System-on-Module Design</h3>
                             <p class="project-desc">
-                                Centralized embedded control hub for unifying disparate home appliances. Focus was on creating robust power systems and reducing electrical noise in the PCB layout.
+                                I engineered a high-performance hardware solution utilizing the ESP32-S3 SoC, specifically optimizing the RF layout and power delivery network to support reliable Wi-Fi and Bluetooth LE connectivity. The design incorporates an integrated LiPo battery management circuit and dual USB-C ports, making it a versatile platform for advanced IoT applications and edge computing projects.
                             </p>
                             <div class="project-tech">
-                                <span>Hardware Design</span>
-                                <span>Python</span>
-                                <span>Microprocessors</span>
+                                <span>Altium Designer</span>
+                                <span>ESP32-S3</span>
+                                <span>IoT</span>
+                            </div>
+                            <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                                <a href="https://www.linkedin.com/posts/abhinav-sobha-suresh_pcbdesign-esp32s3mini-altiumdesigner-activity-7287803876164976640-jRj_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa1vlIBT2rh7sGEivrOK74ibQYuDQGtMe4" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class='bx bxl-linkedin'></i> LinkedIn Post</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass reveal" data-delay="300">
+                        <div class="project-img-placeholder" style="padding: 0; overflow: hidden;">
+                            <img src="Arduinosheild.jpg" alt="Arduino Motor Driver Shield" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Custom Arduino Motor Driver Shield</h3>
+                            <p class="project-desc">
+                                I designed a plug-and-play Arduino shield featuring a high-current motor driver circuit capable of controlling multiple DC motors with integrated overcurrent protection. The PCB layout was optimized for thermal dissipation and includes dedicated screw terminals for secure peripheral connections, making it an ideal expansion board for robotics and motion control applications.
+                            </p>
+                            <div class="project-tech">
+                                <span>PCB Design</span>
+                                <span>Motor Control</span>
+                                <span>Robotics</span>
+                            </div>
+                            <div class="project-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                                <a href="https://www.linkedin.com/posts/abhinav-sobha-suresh_pcbdesign-arduino-electronics-activity-7231324614004551680-AeuY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa1vlIBT2rh7sGEivrOK74ibQYuDQGtMe4" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class='bx bxl-linkedin'></i> LinkedIn Post</a>
                             </div>
                         </div>
                     </div>
@@ -298,33 +327,46 @@
         <section id="experience" class="exp section glass-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="title">Experience & Education</h2>
+                    <h2 class="title">Experience</h2>
                     <div class="line"></div>
                 </div>
                 
                 <div class="timeline">
-                    <!-- Experience -->
+                    <!-- Experience 3 -->
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
-                            <div class="timeline-date">Present</div>
-                            <h3 class="timeline-title">Technical Assistant</h3>
-                            <h4 class="timeline-subtitle">Hardware Team</h4>
+                            <div class="timeline-date">April 2026 - Present</div>
+                            <h3 class="timeline-title">PCB Design Engineer</h3>
+                            <h4 class="timeline-subtitle"><a href="https://talrop.com/" target="_blank" style="color: var(--accent-primary);">Talrop</a> | Hardware Architecture & Layout Engineering</h4>
                             <p class="timeline-body">
-                                Assisting senior engineers in the development, prototyping, and debugging of hardware modules. Involved in continuous testing and refinement of embedded solutions.
+                                As a PCB Design Engineer, I am responsible for the schematic capture, layout design, and library management of complex multi-layer printed circuit boards. My role bridges the gap between electrical engineering concepts and mechanical constraints, ensuring that boards are optimized for performance, signal integrity, and manufacturability (DFM).
                             </p>
                         </div>
                     </div>
-                    
-                    <!-- Education -->
+
+                    <!-- Experience 2 -->
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
-                            <div class="timeline-date">Past</div>
-                            <h3 class="timeline-title">Diploma in Electronics and Communication</h3>
-                            <h4 class="timeline-subtitle">Technical Institution</h4>
+                            <div class="timeline-date">February 2025 - April 2026</div>
+                            <h3 class="timeline-title">Junior PCB Designer</h3>
+                            <h4 class="timeline-subtitle"><a href="https://talrop.com/" target="_blank" style="color: var(--accent-primary);">Talrop</a> | Hardware & Layout Specialist</h4>
                             <p class="timeline-body">
-                                Built a strong foundation in modern electronics, circuits, and communication systems. Completed coursework focusing on electronic architectures and hands-on laboratory experiments.
+                                As a Junior PCB Designer, I am responsible for transforming complex circuit schematics into functional, high-quality printed circuit board layouts. I work across the entire design lifecycle, ensuring that all hardware designs are optimized for electrical performance, thermal management, and seamless transition into large-scale manufacturing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-date">June 2024 - February 2025</div>
+                            <h3 class="timeline-title">Technical Assistant Trainee</h3>
+                            <h4 class="timeline-subtitle"><a href="https://talrop.com/" target="_blank" style="color: var(--accent-primary);">Talrop</a> | Research & Development</h4>
+                            <p class="timeline-body">
+                                As a Technical Assistant Trainee, I actively collaborate with the core electronics engineering and research teams to streamline the development lifecycle of innovative hardware solutions. My role focuses on bridging the gap between theoretical research and functional prototyping by maintaining laboratory standards, conducting rigorous component testing, and assisting in the documentation of experimental data.
                             </p>
                         </div>
                     </div>

@@ -437,8 +437,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-card {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     padding: 6px;
@@ -960,10 +960,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 2rem;
     }
     
-    .profile-card {
-        width: 280px;
-        height: 280px;
-    }
+
     
     .project-card {
         grid-template-columns: 1fr;
@@ -1014,6 +1011,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
     .section {
         padding: 60px 0;
+    }
+    .home.section {
+        padding-top: 110px;
     }
     .name {
         font-size: 1.8rem;
