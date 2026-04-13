@@ -164,19 +164,46 @@ if(contactForm) {
         
         btn.innerHTML = `<i class='bx bx-loader-alt bx-spin'></i> Sending...`;
         
-        // Simulate network request
-        setTimeout(() => {
+        const formData = new FormData(contactForm);
+        
+        fetch(contactForm.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData
+        }).then(() => {
             btn.style.background = '#10b981'; // Green success color
             btn.innerHTML = `<i class='bx bx-check'></i> Message Sent!`;
             contactForm.reset();
+            
+            const formMessage = document.getElementById('formMessage');
+            if (formMessage) {
+                formMessage.style.color = '#10b981';
+                formMessage.innerHTML = 'Thank you! Your message has been sent successfully.';
+            }
             
             // Revert back
             setTimeout(() => {
                 btn.style.background = '';
                 btn.innerHTML = originalText;
-            }, 3000);
+                if (formMessage) formMessage.innerHTML = '';
+            }, 5000);
+        }).catch((err) => {
+            console.error('Submission failed', err);
+            btn.style.background = '#ef4444'; // Red error color
+            btn.innerHTML = `<i class='bx bx-x'></i> Error`;
             
-        }, 1500);
+            const formMessage = document.getElementById('formMessage');
+            if (formMessage) {
+                formMessage.style.color = '#ef4444';
+                formMessage.innerHTML = 'Oops! Something went wrong. Please try again.';
+            }
+            
+            setTimeout(() => {
+                btn.style.background = '';
+                btn.innerHTML = originalText;
+                if (formMessage) formMessage.innerHTML = '';
+            }, 5000);
+        });
     });
 }
 
